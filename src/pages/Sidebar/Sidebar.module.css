@@ -1,0 +1,47 @@
+.sidebar {
+  border-left: 1px solid #2B2B2B;
+  width: 300px;
+  height: 100vh;
+  background-color: #01467E;
+}
+
+.sidebar img {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 20px;
+  color: #FFFFFF;
+  transition: background .3s;
+}
+
+.sidebar a::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background: url("../../assets/right_arrow.svg") center no-repeat;
+  transition: margin .3s;
+}
+
+.sidebar a:hover {
+  background-color: #0774bc;
+}
+
+.sidebar a:hover::after {
+  margin-left: 20px;
+}
+
+.sidebar li:first-child {
+  border-top: 1px solid #0774bc;
+}
+
+.sidebar li {
+  border-bottom: 1px solid #0774bc;
+}
