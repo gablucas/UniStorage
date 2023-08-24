@@ -1,0 +1,25 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 22px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  border: 1px solid #969696;
+  border-radius: 7px;
+  background-color: #F7F7F7;
+}
+
+.checkbox label {
+  color: #2B2B2B;
+}
+
+.checkbox input {
+  height: 16px;
+  width: 16px;
+}

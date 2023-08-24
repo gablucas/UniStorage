@@ -1,0 +1,25 @@
+.inputAddon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 21px;
+  height: 48px;
+  width: 50px;
+
+  padding: 4px;
+  border-radius: 7px;
+  color: #7F7F7F;
+  background-color: #F7F7F7;
+}
+
+.left {
+  left: 1px;
+  border-right: 1px solid #B2B2B2;
+}
+
+.right {
+  right: 1px;
+  border-left: 1px solid #B2B2B2;
+
+}
