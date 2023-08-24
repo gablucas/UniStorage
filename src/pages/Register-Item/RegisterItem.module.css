@@ -1,0 +1,79 @@
+.registeritem h1 {
+  color: #01467E;
+}
+
+.registeritem form {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:  "itemName itemName itemName"
+                        "measure  quantity price"
+                        "fabrication hasExpiration  expiration"
+                        "register register cancel";
+
+}
+
+.registeritem form > div {
+  position: relative;
+}
+
+.registeritem form > div:nth-child(1) {
+  grid-area: itemName;
+}
+
+.registeritem form > div:nth-child(2) {
+  grid-area: measure;
+}
+
+.registeritem form > div:nth-child(3) {
+  grid-area: quantity;
+}
+
+.registeritem form > div:nth-child(4) {
+  grid-area: price;
+}
+
+.registeritem form > div:nth-child(5) {
+  grid-area: fabrication;
+}
+
+.registeritem form > div:nth-child(6) {
+  grid-area: hasExpiration;
+}
+
+.registeritem form > div:nth-child(7) {
+  grid-area: expiration;
+}
+
+.registerButton {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  background-color: #0774bc;
+  transition: background-color .3s;
+  cursor: pointer;
+  grid-area: register;
+}
+
+.registerButton:hover {
+  background-color: #01467E;
+}
+
+.cancelButton {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  background-color: #2B2B2B;
+  transition: background-color .3s;
+  cursor: pointer;
+  grid-area: cancel;
+}
+
+.cancelButton:hover {
+  background-color: #444444;
+}

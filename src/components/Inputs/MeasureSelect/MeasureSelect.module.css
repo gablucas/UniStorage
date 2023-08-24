@@ -1,0 +1,4 @@
+.measureSelect {
+  display: flex;
+  flex-direction: column;
+}
