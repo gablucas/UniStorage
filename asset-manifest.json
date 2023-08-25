@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Unistorage/static/css/main.ef9b43b8.css",
+    "main.js": "/Unistorage/static/js/main.ab6c93e9.js",
+    "index.html": "/Unistorage/index.html",
+    "static/media/right_arrow.svg": "/Unistorage/static/media/right_arrow.7e060cc75d9723dd273c.svg",
+    "main.ef9b43b8.css.map": "/Unistorage/static/css/main.ef9b43b8.css.map",
+    "main.ab6c93e9.js.map": "/Unistorage/static/js/main.ab6c93e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef9b43b8.css",
+    "static/js/main.ab6c93e9.js"
+  ]
+}
