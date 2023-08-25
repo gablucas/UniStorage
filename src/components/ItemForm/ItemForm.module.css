@@ -8,7 +8,7 @@
   width: 800px;
   grid-template-areas:  "itemName itemName itemName"
                         "measure  quantity price"
-                        "fabrication hasExpiration  expiration"
+                        "fabrication hasExpiration expiration"
                         "register register cancel";
 
 }
@@ -45,16 +45,21 @@
   grid-area: expiration;
 }
 
-.registerButton {
+.itemForm button,
+.itemForm a {
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.2rem;
   margin-top: 20px;
   padding: 12px 20px;
   color: #FFFFFF;
   border-radius: 7px;
-  background-color: #0774bc;
   transition: background-color .3s;
   cursor: pointer;
+}
+
+.registerButton {
+  background-color: #0774bc;
   grid-area: register;
 }
 
@@ -63,19 +68,52 @@
 }
 
 .cancelLink {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  padding: 12px 20px;
-  color: #FFFFFF;
-  border-radius: 7px;
   background-color: #2B2B2B;
-  transition: background-color .3s;
-  cursor: pointer;
   grid-area: cancel;
 }
 
 .cancelLink:hover {
   background-color: #444444;
 }
+
+@media (max-width: 1160px) {
+  .itemForm form {
+    width: auto;
+    margin-right: 20px;
+    grid-template-areas:  "itemName itemName"
+                          "measure  quantity"
+                          "price fabrication"
+                          "hasExpiration expiration"
+                          "register cancel";
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .itemForm {
+    margin-left: 20px;
+  }
+
+  .itemForm form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .itemForm input {
+    width: 100%;
+  }
+
+  .itemForm button {
+    margin-top: 0px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .itemForm {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+

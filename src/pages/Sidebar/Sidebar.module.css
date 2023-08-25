@@ -45,3 +45,16 @@
 .sidebar li {
   border-bottom: 1px solid #0774bc;
 }
+
+@media (max-width: 960px) {
+  .sidebar {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    height: 100%;
+    width: 100%;
+  }
+}

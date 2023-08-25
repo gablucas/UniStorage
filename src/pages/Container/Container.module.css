@@ -4,3 +4,10 @@
   justify-content: start;
   gap: 40px;
 }
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+}
