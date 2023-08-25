@@ -1,4 +1,4 @@
-import Error from "../../Error";
+import Error from '../../Error';
 import InputAddon from "../InputAddon";
 
 import Styles from './Input.module.css';

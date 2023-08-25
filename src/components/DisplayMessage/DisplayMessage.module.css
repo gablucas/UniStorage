@@ -1,0 +1,39 @@
+.displayMessage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #01467E;
+}
+
+.displayMessage p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.displayMessage button {
+  border-radius: 7px;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.buttonWrapper button:first-of-type {
+  background-color: #CC0000;
+}
+
+.buttonWrapper button:last-of-type {
+  background-color: #0774bc;
+}
+
+.buttonWrapper button:hover {
+  filter: brightness(1.2);
+}

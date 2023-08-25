@@ -1,10 +1,11 @@
-.registeritem h1 {
+.itemForm h1 {
   color: #01467E;
 }
 
-.registeritem form {
+.itemForm form {
   display: grid;
   gap: 20px;
+  width: 800px;
   grid-template-areas:  "itemName itemName itemName"
                         "measure  quantity price"
                         "fabrication hasExpiration  expiration"
@@ -12,35 +13,35 @@
 
 }
 
-.registeritem form > div {
+.itemForm form > div {
   position: relative;
 }
 
-.registeritem form > div:nth-child(1) {
+.itemForm form > div:nth-child(1) {
   grid-area: itemName;
 }
 
-.registeritem form > div:nth-child(2) {
+.itemForm form > div:nth-child(2) {
   grid-area: measure;
 }
 
-.registeritem form > div:nth-child(3) {
+.itemForm form > div:nth-child(3) {
   grid-area: quantity;
 }
 
-.registeritem form > div:nth-child(4) {
+.itemForm form > div:nth-child(4) {
   grid-area: price;
 }
 
-.registeritem form > div:nth-child(5) {
+.itemForm form > div:nth-child(5) {
   grid-area: fabrication;
 }
 
-.registeritem form > div:nth-child(6) {
+.itemForm form > div:nth-child(6) {
   grid-area: hasExpiration;
 }
 
-.registeritem form > div:nth-child(7) {
+.itemForm form > div:nth-child(7) {
   grid-area: expiration;
 }
 
@@ -61,7 +62,8 @@
   background-color: #01467E;
 }
 
-.cancelButton {
+.cancelLink {
+  text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-top: 20px;
@@ -74,6 +76,6 @@
   grid-area: cancel;
 }
 
-.cancelButton:hover {
+.cancelLink:hover {
   background-color: #444444;
 }
